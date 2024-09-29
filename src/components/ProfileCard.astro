@@ -1,0 +1,26 @@
+---
+import { SITE_TITLE } from "../consts";
+---
+
+<section></section>
+
+<style>
+  section {
+    position: relative;
+    background: var(--base-background-color);
+    width: 334px;
+    height: 488px;
+    border-radius: 1.5em;
+  }
+  section::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    bottom: -1px;
+    right: -1px;
+    background: var(--accent-gradient);
+    border-radius: 1.5em;
+    z-index: -1;
+  }
+</style>

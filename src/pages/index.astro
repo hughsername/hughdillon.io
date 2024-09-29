@@ -1,10 +1,11 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import Essay from "../components/Essay.astro";
 import "@fontsource-variable/plus-jakarta-sans";
 import "@fontsource-variable/kantumruy-pro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import ProfileCard from "../components/ProfileCard.astro";
 ---
 
 <!doctype html>
@@ -15,52 +16,195 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 	<body>
 		<Header />
 		<main>
-			<h1>Exceptionally long title to test the line wrap for blog posts</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter
-				template. This template serves as a lightweight, minimally-styled starting
-				point for anyone looking to build a personal website, blog, or portfolio
-				with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add
-				tools like Tailwind, React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>
-					Edit the site header items in <code>src/components/Header.astro</code>
-				</li>
-				<li>
-					Add your name to the footer in <code>src/components/Footer.astro</code
+			<section class="hero">
+				<article>
+					<h1>Exceptionally long title to test the line wrap for blog posts</h1>
+					<p>
+						Welcome to the official <a href="https://astro.build/">Astro</a> blog
+						starter template. This template serves as a lightweight, minimally-styled
+						starting point for anyone looking to build a personal website, blog,
+						or portfolio with Astro.
+					</p>
+					<p>
+						This template comes with a few integrations already configured in
+						your
+						<code>astro.config.mjs</code> file. You can customize your setup with
+						<a href="https://astro.build/integrations">Astro Integrations</a> to
+						add tools like Tailwind, React, or Vue to your project.
+					</p>
+					<p>Here are a few ideas on how to get started with the template:</p>
+					<ul>
+						<li>Edit this page in <code>src/pages/index.astro</code></li>
+						<li>
+							Edit the site header items in <code
+								>src/components/Header.astro</code
+							>
+						</li>
+						<li>
+							Add your name to the footer in <code
+								>src/components/Footer.astro</code
+							>
+						</li>
+						<li>
+							Check out the included blog posts in <code>src/content/blog/</code
+							>
+						</li>
+						<li>
+							Customize the blog post page layout in <code
+								>src/layouts/BlogPost.astro</code
+							>
+						</li>
+					</ul>
+					<p>
+						Have fun! If you get stuck, remember to <a
+							href="https://docs.astro.build/"
+							>read the docs
+						</a> or <a href="https://astro.build/chat">join us on Discord</a> to
+						ask questions.
+					</p>
+					<p>
+						Looking for a blog template with a bit more personality? Check out <a
+							href="https://github.com/Charca/astro-blog-template"
+							>astro-blog-template
+						</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
+					</p>
+				</article>
+				<div class="spacer">
+					<ProfileCard />
+				</div>
+			</section>
+			<section class="orange">
+				<!-- <Essay /> -->
+				<svg class="svg">
+					<clipPath id="my-clip-path" clipPathUnits="objectBoundingBox"
+						><path
+							d="M0.216,0.088 C0.272,0.088,0.272,0,0.324,0 L0.677,0 C0.729,0,0.728,0.088,0.784,0.088 L0.992,0.088 C0.996,0.088,1,0.097,1,0.108 V0.98 C1,0.991,0.996,1,0.992,1 H0.784 C0.728,1,0.729,0.912,0.677,0.912 H0.324 C0.272,0.912,0.272,1,0.216,1 H0.008 C0.004,1,0,0.991,0,0.98 V0.108 C0,0.097,0.004,0.088,0.008,0.088 H0.216"
+						></path></clipPath
 					>
-				</li>
-				<li>
-					Check out the included blog posts in <code>src/content/blog/</code>
-				</li>
-				<li>
-					Customize the blog post page layout in <code
-						>src/layouts/BlogPost.astro</code
+				</svg>
+				<section class="container">
+					<svg
+						preserveAspectRatio="none"
+						viewBox="0 0 970 408"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
 					>
-				</li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a
-					href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask
-				questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+						<defs>
+							<linearGradient
+								id="myGradient"
+								x1="0"
+								y1="0"
+								x2="1"
+								y2="0.176"
+								gradientUnits="objectBoundingBox"
+							>
+								<stop offset="0%" stop-color="hsl(14deg 100% 58%)"></stop>
+								<stop offset="8%" stop-color="hsl(14deg 95% 57%)"></stop>
+								<stop offset="17%" stop-color="hsl(14deg 90% 55%)"></stop>
+								<stop offset="25%" stop-color="hsl(14deg 85% 54%)"></stop>
+								<stop offset="33%" stop-color="hsl(14deg 81% 52%)"></stop>
+								<stop offset="42%" stop-color="hsl(14deg 77% 51%)"></stop>
+								<stop offset="50%" stop-color="hsl(14deg 75% 49%)"></stop>
+								<stop offset="58%" stop-color="hsl(14deg 76% 48%)"></stop>
+								<stop offset="67%" stop-color="hsl(14deg 77% 46%)"></stop>
+								<stop offset="75%" stop-color="hsl(14deg 78% 45%)"></stop>
+								<stop offset="83%" stop-color="hsl(14deg 79% 43%)"></stop>
+								<stop offset="92%" stop-color="hsl(14deg 80% 42%)"></stop>
+								<stop offset="100%" stop-color="hsl(14deg 82% 40%)"></stop>
+							</linearGradient>
+							<linearGradient
+								id="myGradientDark"
+								x1="0"
+								y1="0"
+								x2="1"
+								y2="0.176"
+								gradientUnits="objectBoundingBox"
+							>
+								<stop offset="0%" stop-color="hsl(0deg 0% 7%)"></stop>
+								<stop offset="8%" stop-color="hsl(344deg 0% 7%)"></stop>
+								<stop offset="17%" stop-color="hsl(344deg 0% 8%)"></stop>
+								<stop offset="25%" stop-color="hsl(344deg 0% 9%)"></stop>
+								<stop offset="33%" stop-color="hsl(344deg 0% 9%)"></stop>
+								<stop offset="42%" stop-color="hsl(344deg 0% 10%)"></stop>
+								<stop offset="50%" stop-color="hsl(344deg 0% 10%)"></stop>
+								<stop offset="58%" stop-color="hsl(344deg 0% 11%)"></stop>
+								<stop offset="67%" stop-color="hsl(344deg 0% 11%)"></stop>
+								<stop offset="75%" stop-color="hsl(344deg 0% 12%)"></stop>
+								<stop offset="83%" stop-color="hsl(344deg 0% 12%)"></stop>
+								<stop offset="92%" stop-color="hsl(344deg 0% 13%)"></stop>
+								<stop offset="100%" stop-color="hsl(0deg 0% 13%)"></stop>
+							</linearGradient>
+						</defs>
+						<path
+							d="M313.963 0.501709L313.964 0.501709L655.54 0.498802C668.124 0.490601 677.497 2.72407 685.328 6.06966C692.9 9.30442 699.044 13.5835 705.287 17.9322L705.954 18.3967C712.421 22.8985 719.046 27.4318 727.465 30.8326C735.89 34.236 746.093 36.4986 759.729 36.4986L961.179 36.5014C965.321 36.5014 968.679 39.8593 968.679 44.0014V400.004C968.679 404.146 965.321 407.504 961.179 407.504H759.729C746.211 407.504 736.137 405.262 727.84 401.91C719.536 398.556 712.993 394.083 706.526 389.581L705.835 389.1C699.608 384.763 693.389 380.431 685.721 377.155C677.76 373.754 668.252 371.496 655.54 371.504H313.965C301.217 371.48 291.684 373.73 283.705 377.129C276.007 380.408 269.77 384.752 263.525 389.101L262.869 389.558C256.396 394.064 249.85 398.543 241.542 401.902C233.24 405.258 223.159 407.504 209.628 407.504H8.17871C4.03657 407.504 0.678711 404.146 0.678711 400.004V44.0015C0.678711 39.8593 4.03658 36.5015 8.17871 36.5015H209.628C223.278 36.5015 233.487 34.235 241.917 30.8267C250.34 27.4209 256.968 22.8818 263.441 18.3763C263.651 18.2297 263.862 18.0832 264.072 17.9368C270.334 13.5758 276.495 9.28471 284.097 6.04651C291.945 2.70383 301.343 0.478019 313.963 0.501709Z"
+							fill="url(#myGradientDark)"
+							stroke="url(#myGradient)"></path>
+					</svg>
+
+					<h2>Essays</h2>
+				</section>
+			</section>
+			<section style="height: 100vh;"></section>
+			<section class="orange">
+				<section class="container"></section>
+			</section>
+			<!-- <Footer /> -->
 		</main>
-		<!-- <Footer /> -->
 	</body>
 </html>
+
+<style>
+	.hero {
+		display: flex;
+		justify-content: space-between;
+		max-width: calc(100% - 2em);
+		min-height: calc(100vh - 16px);
+		margin: 4em 4em 0;
+		padding-top: 2em;
+	}
+	.orange {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1em;
+		position: relative;
+		width: 100vw;
+		margin: auto;
+		height: 100vh;
+	}
+	.container {
+		display: flex;
+		padding: 8em 4em;
+		gap: 1em;
+		width: 98%;
+		height: 98%;
+		/* background: var(--base-background-color); */
+		background: var(--accent-gradient);
+		-webkit-clip-path: url(#my-clip-path);
+		clip-path: url(#my-clip-path);
+	}
+	.container svg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		width: 98%;
+		height: 98%;
+		stroke: var(--accent-gradient);
+		z-index: -1;
+	}
+
+	.svg {
+		position: absolute;
+		width: 0;
+		height: 0;
+	}
+
+	.spacer {
+		margin: auto;
+		margin-top: 0;
+	}
+	article {
+		width: 720px;
+	}
+</style>
