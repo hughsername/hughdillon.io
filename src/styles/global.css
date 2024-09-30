@@ -40,36 +40,52 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 :root {
-	--accent: #FF5E2B;
-	--accent-dark: #BB3B13;
+	--accent: #2458F2;
+	--accent-dark: #0038DE;
 	--accent-gradient: linear-gradient(
     10deg,
-    hsl(14deg 100% 58%) 0%,
-    hsl(14deg 95% 57%) 8%,
-    hsl(14deg 90% 55%) 17%,
-    hsl(14deg 85% 54%) 25%,
-    hsl(14deg 81% 52%) 33%,
-    hsl(14deg 77% 51%) 42%,
-    hsl(14deg 75% 49%) 50%,
-    hsl(14deg 76% 48%) 58%,
-    hsl(14deg 77% 46%) 67%,
-    hsl(14deg 78% 45%) 75%,
-    hsl(14deg 79% 43%) 83%,
-    hsl(14deg 80% 42%) 92%,
-    hsl(14deg 82% 40%) 100%
+    hsl(240deg 100% 53%) 0%,
+    hsl(231deg 100% 50%) 8%,
+    hsl(228deg 100% 50%) 17%,
+    hsl(225deg 100% 50%) 25%,
+    hsl(223deg 100% 50%) 33%,
+    hsl(221deg 100% 50%) 42%,
+    hsl(219deg 100% 50%) 50%,
+    hsl(218deg 100% 50%) 58%,
+    hsl(216deg 100% 50%) 67%,
+    hsl(214deg 100% 50%) 75%,
+    hsl(213deg 100% 50%) 83%,
+    hsl(212deg 100% 50%) 92%,
+    hsl(210deg 100% 50%) 100%
   );
-	--text-color-heaviest: #222;
-	--text-color-heavy: #3C3533;
-	--base-background-color: #FAFAFA;
-	--code-background-color: #e1e1e1;
-	--horizontal-break-color: #e1e1e1;
-	--menu-background-color: #333;
-
-	--gray: 96, 115, 159;
-	--gray-light: 229, 233, 240;
-	--gray-dark: #3C3533;
-	--light-grey: #e1e1e1;
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
+	--base-background-color: linear-gradient(
+		10deg,
+		hsl(0deg 0% 100%) 0%,
+		hsl(211deg 65% 99%) 8%,
+		hsl(211deg 65% 99%) 17%,
+		hsl(211deg 65% 98%) 25%,
+		hsl(211deg 65% 97%) 33%,
+		hsl(210deg 65% 97%) 42%,
+		hsl(210deg 65% 96%) 50%,
+		hsl(210deg 65% 95%) 58%,
+		hsl(210deg 65% 95%) 67%,
+		hsl(210deg 65% 94%) 75%,
+		hsl(210deg 65% 93%) 83%,
+		hsl(210deg 65% 93%) 92%,
+		hsl(210deg 65% 92%) 100%
+		);
+		--svg-stroke: url(#accentGradientLight);
+		--svg-background: url(#baseBackgroundColorLight);
+		--text-color-heaviest: #222;
+		--text-color-heavy: #3C3533;
+		--menu-background-color: #333;
+		--code-background-color: #cedced;
+		--horizontal-break-color: #e1e1e1;
+		--gray: 96, 115, 159;
+		--gray-light: 229, 233, 240;
+		--gray-dark: #3C3533;
+		--light-grey: #e1e1e1;
+		--gray-gradient: rgba(var(--gray-light), 50%), #fff;
 	--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
 		0 16px 32px rgba(var(--gray), 33%);
 		box-sizing: border-box;
@@ -96,6 +112,24 @@ p, h1, h2, h3, h4, h5, h6 {
 			hsl(344deg 0% 13%) 92%,
 			hsl(0deg 0% 13%) 100%
 		);
+		--accent-gradient: linear-gradient(
+			10deg,
+			hsl(14deg 100% 58%) 0%,
+			hsl(14deg 95% 57%) 8%,
+			hsl(14deg 90% 55%) 17%,
+			hsl(14deg 85% 54%) 25%,
+			hsl(14deg 81% 52%) 33%,
+			hsl(14deg 77% 51%) 42%,
+			hsl(14deg 75% 49%) 50%,
+			hsl(14deg 76% 48%) 58%,
+			hsl(14deg 77% 46%) 67%,
+			hsl(14deg 78% 45%) 75%,
+			hsl(14deg 79% 43%) 83%,
+			hsl(14deg 80% 42%) 92%,
+			hsl(14deg 82% 40%) 100%
+		);
+		--svg-stroke: url(#accentGradientDark);
+		--svg-background: url(#baseBackgroundColorDark);
 		--code-background-color: #454545;
 		--horizontal-break-color: #e1e1e1;
 		--menu-background-color: #333;

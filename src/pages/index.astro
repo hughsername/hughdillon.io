@@ -16,6 +16,9 @@ import ProfileCard from "../components/ProfileCard.astro";
 	<body>
 		<Header />
 		<main>
+			<section class="orange">
+				<section class="container"></section>
+			</section>
 			<section class="hero">
 				<article>
 					<h1>Exceptionally long title to test the line wrap for blog posts</h1>
@@ -91,7 +94,7 @@ import ProfileCard from "../components/ProfileCard.astro";
 					>
 						<defs>
 							<linearGradient
-								id="myGradient"
+								id="accentGradientDark"
 								x1="0"
 								y1="0"
 								x2="1"
@@ -113,7 +116,7 @@ import ProfileCard from "../components/ProfileCard.astro";
 								<stop offset="100%" stop-color="hsl(14deg 82% 40%)"></stop>
 							</linearGradient>
 							<linearGradient
-								id="myGradientDark"
+								id="baseBackgroundColorDark"
 								x1="0"
 								y1="0"
 								x2="1"
@@ -134,20 +137,61 @@ import ProfileCard from "../components/ProfileCard.astro";
 								<stop offset="92%" stop-color="hsl(344deg 0% 13%)"></stop>
 								<stop offset="100%" stop-color="hsl(0deg 0% 13%)"></stop>
 							</linearGradient>
+							<linearGradient
+								id="accentGradientLight"
+								x1="0"
+								y1="0"
+								x2="1"
+								y2="0.176"
+								gradientUnits="objectBoundingBox"
+							>
+								<stop offset="0%" stop-color="hsl(240deg 100% 53%)"></stop>
+								<stop offset="8%" stop-color="hsl(231deg 100% 50%)"></stop>
+								<stop offset="17%" stop-color="hsl(228deg 100% 50%)"></stop>
+								<stop offset="25%" stop-color="hsl(225deg 100% 50%)"></stop>
+								<stop offset="33%" stop-color="hsl(223deg 100% 50%)"></stop>
+								<stop offset="42%" stop-color="hsl(221deg 100% 50%)"></stop>
+								<stop offset="50%" stop-color="hsl(219deg 100% 50%)"></stop>
+								<stop offset="58%" stop-color="hsl(218deg 100% 50%)"></stop>
+								<stop offset="67%" stop-color="hsl(216deg 100% 50%)"></stop>
+								<stop offset="75%" stop-color="hsl(214deg 100% 50%)"></stop>
+								<stop offset="83%" stop-color="hsl(213deg 100% 50%)"></stop>
+								<stop offset="92%" stop-color="hsl(212deg 100% 50%)"></stop>
+								<stop offset="100%" stop-color="hsl(210deg 100% 50%)"></stop>
+							</linearGradient>
+							<linearGradient
+								id="baseBackgroundColorLight"
+								x1="0"
+								y1="0"
+								x2="1"
+								y2="0.176"
+								gradientUnits="objectBoundingBox"
+							>
+								<stop offset="0%" stop-color="hsl(0deg 0% 100%)"></stop>
+								<stop offset="8%" stop-color="hsl(211deg 65% 99%)"></stop>
+								<stop offset="17%" stop-color="hsl(211deg 65% 99%)"></stop>
+								<stop offset="25%" stop-color="hsl(211deg 65% 98%)"></stop>
+								<stop offset="33%" stop-color="hsl(211deg 65% 97%)"></stop>
+								<stop offset="42%" stop-color="hsl(210deg 65% 97%)"></stop>
+								<stop offset="50%" stop-color="hsl(210deg 65% 96%)"></stop>
+								<stop offset="58%" stop-color="hsl(210deg 65% 95%)"></stop>
+								<stop offset="67%" stop-color="hsl(210deg 65% 95%)"></stop>
+								<stop offset="75%" stop-color="hsl(210deg 65% 94%)"></stop>
+								<stop offset="83%" stop-color="hsl(210deg 65% 93%)"></stop>
+								<stop offset="92%" stop-color="hsl(210deg 65% 93%)"></stop>
+								<stop offset="100%" stop-color="hsl(210deg 65% 92%)"></stop>
+							</linearGradient>
 						</defs>
 						<path
 							d="M313.963 0.501709L313.964 0.501709L655.54 0.498802C668.124 0.490601 677.497 2.72407 685.328 6.06966C692.9 9.30442 699.044 13.5835 705.287 17.9322L705.954 18.3967C712.421 22.8985 719.046 27.4318 727.465 30.8326C735.89 34.236 746.093 36.4986 759.729 36.4986L961.179 36.5014C965.321 36.5014 968.679 39.8593 968.679 44.0014V400.004C968.679 404.146 965.321 407.504 961.179 407.504H759.729C746.211 407.504 736.137 405.262 727.84 401.91C719.536 398.556 712.993 394.083 706.526 389.581L705.835 389.1C699.608 384.763 693.389 380.431 685.721 377.155C677.76 373.754 668.252 371.496 655.54 371.504H313.965C301.217 371.48 291.684 373.73 283.705 377.129C276.007 380.408 269.77 384.752 263.525 389.101L262.869 389.558C256.396 394.064 249.85 398.543 241.542 401.902C233.24 405.258 223.159 407.504 209.628 407.504H8.17871C4.03657 407.504 0.678711 404.146 0.678711 400.004V44.0015C0.678711 39.8593 4.03658 36.5015 8.17871 36.5015H209.628C223.278 36.5015 233.487 34.235 241.917 30.8267C250.34 27.4209 256.968 22.8818 263.441 18.3763C263.651 18.2297 263.862 18.0832 264.072 17.9368C270.334 13.5758 276.495 9.28471 284.097 6.04651C291.945 2.70383 301.343 0.478019 313.963 0.501709Z"
-							fill="url(#myGradientDark)"
-							stroke="url(#myGradient)"></path>
+						></path>
 					</svg>
 
 					<h2>Essays</h2>
 				</section>
 			</section>
 			<section style="height: 100vh;"></section>
-			<section class="orange">
-				<section class="container"></section>
-			</section>
+
 			<!-- <Footer /> -->
 		</main>
 	</body>
@@ -190,7 +234,10 @@ import ProfileCard from "../components/ProfileCard.astro";
 		transform: translateX(-50%) translateY(-50%);
 		width: 98%;
 		height: 98%;
-		stroke: var(--accent-gradient);
+		/* stroke: url(#accentGradientLight); */
+		stroke: var(--svg-stroke);
+		/* fill: url(#baseBackgroundColorLight); */
+		fill: var(--svg-background);
 		z-index: -1;
 	}
 
